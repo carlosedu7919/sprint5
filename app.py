@@ -5,6 +5,7 @@ import streamlit as st
 vehicles = pd.read_csv('vehicles.csv') 
 hist_button = st.button('Criar histograma') 
 scatter_button = st.button('Criar gráfico de dispersão')
+st.title('Projeto Sprint 5')
 if hist_button:
      st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
      fig = px.histogram(vehicles, x="odometer")
